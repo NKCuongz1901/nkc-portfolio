@@ -2,6 +2,7 @@ import Photo from "@/components/photo";
 import Socials from "@/components/socials";
 import { Button } from "@/components/ui/button";
 import { IoMdDownload } from "react-icons/io";
+
 export default function Home() {
   return (
     <section className="h-full">
@@ -13,7 +14,7 @@ export default function Home() {
             <p className="max-w-[500px] pb-10 text-white/80">As a passionate and detail-oriented Frontend Developer, I aim to craft user-friendly, visually appealing, and responsive web interfaces that enhance user experiences.</p>
             <div className="flex flex-col xl:flex-row gap-8 items-center  ">
               <Button variant={'outline'} size={"lg"} className="uppercase flex items-center gap-2">
-                DOWNLOAD CV
+                <a href="/assets/nkCuong.pdf" download="KhacCuong_CV.pdf">DOWNLOAD CV</a>
                 <IoMdDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
