@@ -64,7 +64,7 @@ function Photo() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 1, duration: 0.4, ease: "easeInOut" } }}
             >
-                <Image src={"/assets/giphy.gif"} alt="Profile Animation" priority quality={100} fill className="object-contain" />
+                <Image src={"/assets/giphy.gif"} alt="Profile Animation" priority quality={100} fill className="object-contain" unoptimized />
             </motion.div>
 
             {/* Circle Animation */}
