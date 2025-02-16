@@ -186,7 +186,7 @@ const Resume = () => {
                                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-x-[50px]">
                                     {about.info.map((item, index) => {
                                         return (
-                                            <li className="flex gap-2">
+                                            <li className="flex gap-2" key={index}>
                                                 <span className="text-white/40">{item.fieldName}</span>
                                                 <span className="text-base">{item.fieldValue}</span>
                                             </li>
