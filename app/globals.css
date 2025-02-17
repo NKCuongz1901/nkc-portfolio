@@ -8,7 +8,7 @@
   }
 
   .h1 {
-    @apply text-[48px] xl:text-[80px] font-semibold leading-[1.1];
+    @apply text-[48px] xl:text-[75px] font-semibold leading-[1.1];
   }
 
   .h2 {

@@ -2,7 +2,6 @@ import Photo from "@/components/photo";
 import Socials from "@/components/socials";
 import { Button } from "@/components/ui/button";
 import { IoMdDownload } from "react-icons/io";
-
 export default function Home() {
   return (
     <section className="h-full">
@@ -11,7 +10,9 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none  ">
             <span className="text-2xl">Web Developer</span>
             <h1 className="h1 mb-6">Hello,Im <br /> <span className="text-accent">Khac Cuong</span></h1>
-            <p className="max-w-[500px] pb-10 text-white/80">As a passionate and detail-oriented Web Developer, I aim to craft user-friendly, visually appealing, and responsive web interfaces that enhance user experiences.</p>
+            <p className="max-w-[500px] pb-10 text-white/80">
+              I am a full-stack web developer specializing in building scalable and high-performance web applications. Passionate about clean code and modern development practices, I focus on delivering seamless user experiences and robust backend infrastructures
+            </p>
             <div className="flex flex-col xl:flex-row gap-8 items-center  ">
               <Button variant={'outline'} size={"lg"} className="uppercase flex items-center gap-2">
                 <a href="/assets/nkCuong.pdf" download="KhacCuong_CV.pdf">DOWNLOAD CV</a>

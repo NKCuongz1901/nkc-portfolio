@@ -7,13 +7,13 @@ const services = [
     {
         num: "01",
         title: "Web Development",
-        description: "As a passionate and detail-oriented Frontend Developer, I aim to craft user-friendly, visually appealing, and responsive web interfaces that enhance user experiences.",
+        description: "I offer comprehensive web development services, specializing in both frontend and backend solutions to create dynamic, responsive, and scalable web applications. With expertise in modern technologies like React.js, Next.js, Node.js. I deliver custom solutions tailored to your business needs.",
         href: "#",
     },
     {
         num: "02",
-        title: "Web Designer",
-        description: "As a passionate and detail-oriented Frontend Developer, I aim to craft user-friendly, visually appealing, and responsive web interfaces that enhance user experiences.",
+        title: "UI/UX Designer",
+        description: "I also provide professional UI/UX design services to create visually stunning and user-friendly digital experiences. By combining creative design with user-centered principles, I focus on crafting intuitive interfaces that enhance usability and engage users effectively.",
         href: "#",
     }
 ];

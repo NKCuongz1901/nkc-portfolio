@@ -11,32 +11,32 @@ const projects = [
     {
         num: "01",
         category: "FullStack",
-        title: "Super market management",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quod illo, quae vero quisquam dolor minima, eligendi velit, doloribus blanditiis in amet dolorem deleniti",
-        stack: [{ name: 'HTML5' }, { name: 'CSS3' }, { name: 'Javascript' }, { name: 'ReactJS' }, { name: 'Antd' }],
-        live: "",
-        github: "",
+        title: "Supermarket management",
+        description: "LA Supermarket Management System streamlines inventory, billing, and sales, improving efficiency and ensuring a seamless customer experience.",
+        stack: [{ name: 'HTML5' }, { name: 'CSS3' }, { name: 'Javascript' }, { name: 'ReactJS' }, { name: 'Antd' }, { name: 'Nodejs' }],
+        live: "https://c-mart-shop-fe.vercel.app/",
+        github: "https://github.com/NKCuongz1901/CMartShopFE.git",
         img: "/assets/work/thumb1.png",
     },
     {
         num: "02",
         category: "FullStack",
-        title: "Super market management",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quod illo, quae vero quisquam dolor minima, eligendi velit, doloribus blanditiis in amet dolorem deleniti",
-        stack: [{ name: 'HTML5' }, { name: 'CSS3' }, { name: 'Javascript' }, { name: 'ReactJS' }, { name: 'Antd' }],
-        live: "",
-        github: "",
-        img: "/assets/work/thumb1.png",
+        title: "ChapApp",
+        description: "A real-time chat app built with React.js and Node.js. It features user authentication, one-on-one and group messaging, real-time notifications, media sharing, and secure data handling with MongoDB, ensuring scalability and smooth communication",
+        stack: [{ name: 'HTML5' }, { name: 'CSS3' }, { name: 'Typescript' }, { name: 'ReactJS' }, { name: 'Shadcn' }, { name: 'Nodejs' }, { name: 'SocketIO' }],
+        live: "https://github.com/NKCuongz1901/ChatAppFE.git",
+        github: "https://github.com/NKCuongz1901/ChatAppFE.git",
+        img: "/assets/work/thumb2.png",
     },
     {
         num: "03",
         category: "FullStack",
-        title: "Super market management",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quod illo, quae vero quisquam dolor minima, eligendi velit, doloribus blanditiis in amet dolorem deleniti",
-        stack: [{ name: 'HTML5' }, { name: 'CSS3' }, { name: 'Javascript' }, { name: 'ReactJS' }, { name: 'Antd' }],
-        live: "",
-        github: "",
-        img: "/assets/work/thumb1.png",
+        title: "Book E-commerce",
+        description: "A book e-commerce platform built with React.js for the frontend and Node.js . It features user authentication, book browsing, advanced search and filtering, a shopping cart, secure checkout, order management, and MongoDB for scalable data storage.",
+        stack: [{ name: 'HTML5' }, { name: 'CSS3' }, { name: 'Javascript' }, { name: 'ReactJS' }, { name: 'Antd' }, { name: 'Nodejs' }],
+        live: "https://github.com/NKCuongz1901/bookEcom.git",
+        github: "https://github.com/NKCuongz1901/bookEcom.git",
+        img: "/assets/work/thumb3.png",
     },
 
 ]
@@ -57,19 +57,20 @@ const Work = () => {
         >
             <div className='container mx:auto'>
                 <div className='flex flex-col xl:flex-row xl:gap-[30px] '>
-                    <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none  '>
+                    <div className='w-full xl:w-[60%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none  '>
                         <div className='text-8xl font-extrabold text-outline text-transparent leading-none '>{project.num}</div>
                         <h2 className='text-[42px] font-bold text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category} project</h2>
+                        <h2 className='text-[35px] font-bold text-accent group-hover:text-accent transition-all duration-500 capitalize'>{project.title}</h2>
                         <p className='text-white/80'>{project.description}</p>
-                        <ul className='flex gap-4'>
+                        <ul className='flex gap-4 '>
                             {project.stack.map((item, index) => {
                                 return (
-                                    <li key={index} className='text-xl text-accent'>{item.name} {index !== project.stack.length - 1 && ","}</li>
+                                    <li key={index} className='text-xl text-accent'>{item.name} </li>
                                 )
                             })}
                         </ul>
                         <div className='border border-b-white/5'></div>
-                        <div className='flex gap-5 items-center'>
+                        <div className='flex gap-5 items-center mt-3'>
                             <Link href={project.live} target='_blank'>
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
@@ -96,7 +97,7 @@ const Work = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='w-full xl:w-[50%]'>
+                    <div className='w-full xl:w-[40%]'>
                         <Swiper
                             spaceBetween={30}
                             slidesPerView={1}
@@ -108,7 +109,7 @@ const Work = () => {
                                     <SwiperSlide key={index} className='w-full'>
                                         <div className='h-[460px] bg-pink-50 relative group flex justify-center items-center '>
                                             <div className='relative h-full w-full'>
-                                                <Image src={project.img} alt='@' fill className='object-cover' />
+                                                <Image src={project.img} alt='@' fill className='object-contain' />
                                             </div>
                                         </div>
                                     </SwiperSlide>

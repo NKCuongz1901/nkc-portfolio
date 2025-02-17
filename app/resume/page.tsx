@@ -9,7 +9,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 const about = {
     title: 'About me',
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati reprehenderit incidunt ipsa, quia illum est optio autem vel, distinctio, beatae inventore veritatis quaerat non! Quis dolore quibusdam autem. Cupiditate, illum.",
+    description: "",
     info: [
         {
             fieldName: 'Name:',
@@ -42,13 +42,13 @@ const about = {
 const experience = {
     icon: 'assets/resume/badge.svg',
     title: 'My experience',
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati reprehenderit incidunt ipsa, quia illum est optio autem vel, distinctio, beatae inventore veritatis quaerat non! Quis dolore quibusdam autem. Cupiditate, illum.",
+    description: "My work focuses on creating seamless, responsive web applications that prioritize both performance and user experience. With a passion for clean code and modern development practices, I strive to deliver high-quality, scalable, and efficient solutions that meet the unique needs of each project.",
 
 };
 const education = {
     icon: 'assets/resume/cap.svg',
     title: "My education",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati reprehenderit incidunt ipsa, quia illum est optio autem vel, distinctio, beatae inventore veritatis quaerat non! Quis dolore quibusdam autem. Cupiditate, illum.",
+    description: "",
     items: [
         {
             institution: "Industrial University Of Ho Chi Minh City",
@@ -64,7 +64,7 @@ const education = {
 }
 const skills = {
     title: 'My skill',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati reprehenderit incidunt ipsa, quia illum est optio autem vel, distinctio, beatae inventore veritatis quaerat non! Quis dolore quibusdam autem. Cupiditate, illum.',
+    description: '',
     skillList: [
         {
             icon: <FaHtml5 />,
